@@ -1066,10 +1066,8 @@ if (text.includes('.joker')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
-var porn = text.split(".joker ")[1];
-    var text1 = porn.split("/")[0];
-    var text2 = porn.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
+var porn = text.split(/.joker /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1078,25 +1076,6 @@ var porn = text.split(".joker ")[1];
             conn.sendMessage(id, buf, MessageType.image, { quoted: m });
         })
     })
-}
-if (text.includes('.joker')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
-}
-if (text.includes('.joker')){
-var porn = text.split(".joker ")[1];
-    var text1 = porn.split("/")[0];
-    var text2 = porn.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
-      imageToBase64(res.data.result)
-        .then(
-          (ress) => {
-            var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
-            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
-        })
-    })
-
-
 }
 
 if (text.includes('.Logoesport')){
@@ -1104,7 +1083,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes('.logoesport')){
 const teks = text.replace(/.logoesport /, "")
-    axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${teks}`)
+    axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=`)
     .then((res) => {
       imageToBase64(res.data.result)
         .then(
