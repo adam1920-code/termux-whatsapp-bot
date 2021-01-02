@@ -1117,6 +1117,25 @@ var porn = text.split(".wolf2 ")[1];
        
       })
 }
+if (text.includes('.glitch')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.glitch')){
+var porn = text.split(".glitch ")[1];
+    var text1 = gli.split("/")[0];
+    var text2 = gli.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1={text1}&text2={text2}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+
+}
 if (text.includes('.lion')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
