@@ -1044,7 +1044,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 }
 
   //Text to pict
- (text.includes('.logopornhub')){
+if (text.includes('.logopornhub')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logopornhub')){
