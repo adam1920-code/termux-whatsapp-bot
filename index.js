@@ -555,7 +555,7 @@ const get = require('got')
 
   //Random foto cewe
 if (text.includes('.Cecan')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
    if (text.includes(".cecan"))
    {
@@ -587,7 +587,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 
   //Random foto cowo
 if (text.includes('.Cogan')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
    if (text.includes(".cogan"))
    {
@@ -618,7 +618,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 
   //Random anime
 if (text.includes('.Anime')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".anime"))
    {
@@ -649,7 +649,7 @@ if (text.includes(".anime"))
 
   //Pencarian lirik
 if (text.includes('.Lirik')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".lirik")){
 	const teks = text.split(".lirik")[1]
@@ -661,7 +661,7 @@ if (text.includes(".lirik")){
 }
   //Font bapack
 if (text.includes('.Alay')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
@@ -673,7 +673,7 @@ if (text.includes(".alay")){
 
   //Random memme
 if (text.includes('.Meme')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".meme"))
    {
@@ -703,7 +703,7 @@ if (text.includes(".meme"))
 
   //Random wallpaper
 if (text.includes('.Wp')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".wp"))
    {
@@ -733,7 +733,7 @@ if (text.includes(".wp"))
 
   //Random twit
 if (text.includes('.Twit')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".twit"))
    {
@@ -818,7 +818,7 @@ if (text.includes(".neko"))
 
   //quotes
 if (text.includes('.Quotes')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".quotes"))
    {
@@ -848,7 +848,7 @@ if (text.includes(".quotes"))
 
   //Pencarian image
 if (text.includes('.Img')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".img"))
    {
@@ -879,7 +879,7 @@ if (text.includes(".img"))
 
   //Stalker instagram
 if (text.includes('.Stalk')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".stalk")){
 const sons = text.replace(/.stalk /, "")
@@ -897,7 +897,7 @@ axios.get(`https://alfians-api.herokuapp.com/api/stalk?username=${sons}`).then (
 
 //Pencarian chord gitar
 if (text.includes('.Chord')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".chord")){
 const teks = text.replace(/.chord /, "")
@@ -910,7 +910,7 @@ axios.get(`https://arugaz.herokuapp.com/api/chord?q=${teks}`).then((res) => {
 
   //Informasi anime
 if (text.includes('.Infonime')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infonime")){
 const sons = text.replace(/.infonime /, "")
@@ -923,7 +923,7 @@ axios.get(`https://arugaz.herokuapp.com/api/kuso?q=${sons}`).then ((res) =>{
 
   //Random fakta
 if (text.includes('.Fakta')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (messageType === MessageType.text)
    {
@@ -945,7 +945,7 @@ if (messageType === MessageType.text)
 
   //Jadwal tv random
 if (text.includes('.Infotv')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infotv")){
 	axios.get(`https://docs-jojo.herokuapp.com/api/jadwaltvnow`).then ((res) => {
@@ -956,7 +956,7 @@ if (text.includes(".infotv")){
 }
   //Nama ninja
 if (text.includes('.Namae')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".namae")){
 const teks = text.replace(/.namae /, "")
@@ -968,7 +968,7 @@ axios.get(`https://api.terhambar.com/ninja?nama=${teks}`).then((res) => {
 }
   //Random informasi gempa
 if (text.includes('.Infogempa')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infogempa")){
   axios.get(`https://arugaz.herokuapp.com/api/infogempa`).then ((res) =>{
@@ -980,7 +980,7 @@ if (text.includes(".infogempa")){
 
   //Informasi cuaca daerah
 if (text.includes('.Cuaca')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".cuaca")){
    	const cuaca = text.replace(/.cuaca /, "")
@@ -1045,7 +1045,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 
   //Text to pict
 if (text.includes('.logopornhub')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logopornhub')){
 var porn = text.split(".logopornhub ")[1];
@@ -1062,8 +1062,81 @@ var porn = text.split(".logopornhub ")[1];
        
       })
 }
+if (text.includes('.ninja')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.ninja')){
+var porn = text.split(".ninja ")[1];
+    var text1 = nin.split("/")[0];
+    var text2 = nin.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${text1}&text2=${text2}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+
+}
+if (text.includes('.wolf1')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.wolf1')){
+var porn = text.split(".wolf1 ")[1];
+    var text1 = wo1.split("/")[0];
+    var text2 = wo1.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1={text1}&text2={text2}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+}
+if (text.includes('.wolf2')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.wolf2')){
+var porn = text.split(".wolf2 ")[1];
+    var text1 = wo1.split("/")[0];
+    var text2 = wo1.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1={text1}&text2={text2}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+}
+if (text.includes('.lion')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.lion')){
+var porn = text.split(".lion ")[1];
+    var text1 = lion.split("/")[0];
+    var text2 = lion.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1={text1}&text2={text2}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+}
 if (text.includes('.joker')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
 var porn = text.split(/.joker /, "")
@@ -1077,7 +1150,14 @@ var porn = text.split(/.joker /, "")
         })
     })
 }
-
+if (text.includes("!spamcall")){
+const jarot = text.replace(/!spamcall /, "")
+axios.get(`https://arugaz.herokuapp.com/api/spamcall?no=${jarot}`).then((res) => {
+	conn.sendMessage(id, '[WAIT] Proses...❗', MessageType.text)
+    let hasil = ` *INFO SPAM CALL* \n\n _${res.data.logs}_`;
+    conn.sendMessage(id, hasil ,MessageType.text);
+})
+}
 if (text.includes('.Logoesport')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
