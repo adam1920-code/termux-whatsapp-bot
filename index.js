@@ -20,9 +20,9 @@ const instagram = 'Instagram kamu';
 const aktif = 'Kapan bot aktif';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nama kamu\n' // Nama kamu
-            + 'ORG:Nama bot;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=Adam Gans:+62 832-5384-3600\n' //Nomor whatsapp kamu
+            + 'FN:Adam Oey\n' // Nama kamu
+            + 'ORG:Yeongsill bot;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=6283153843600:+62 832-5384-3600\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const
 {
