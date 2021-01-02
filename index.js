@@ -15,7 +15,7 @@ const menu = require("./lib/menu.js")
 
 const apivhtear = 'Apikey vhtear';
 const apibarbar = 'Apikey mhankbarbar';
-const BotName = 'Nama bot'; 
+const BotName = 'YEONGSILL BOT'; 
 const instagram = 'Instagram kamu'; 
 const aktif = 'Kapan bot aktif';
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
@@ -1044,7 +1044,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 }
 
   //Text to pict
-if (text.includes('.logopornhub')){
+ (text.includes('.logopornhub')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logopornhub')){
@@ -1059,7 +1059,44 @@ var porn = text.split(".logopornhub ")[1];
             conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
             conn.sendMessage(id, buf, MessageType.image, { quoted: m });
         })
+       
+      })
+}
+if (text.includes('.joker')){
+conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+}
+if (text.includes('.joker')){
+var porn = text.split(".joker ")[1];
+    var text1 = porn.split("/")[0];
+    var text2 = porn.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
     })
+}
+if (text.includes('.joker')){
+conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+}
+if (text.includes('.joker')){
+var porn = text.split(".joker ")[1];
+    var text1 = porn.split("/")[0];
+    var text2 = porn.split("/")[1];
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+
+
 }
 
 if (text.includes('.Logoesport')){
