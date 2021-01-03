@@ -1069,7 +1069,7 @@ if (text.includes('.ninja')){
 var gh = text.split(".ninja ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${text1}&text2=${text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=BOT™&text2=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1088,7 +1088,7 @@ if (text.includes('.wolf1')){
 var gh = text.split(".wolf1 ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1={text1}&text2={text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=BOT™&text2=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1106,7 +1106,7 @@ if (text.includes('.wolf2')){
 var gh = text.split(".wolf2 ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1={text1}&text2={text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1=BOT™&text2=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1124,7 +1124,7 @@ if (text.includes('.glitch')){
 var gh = text.split(".glitch ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1={text1}&text2={text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=BOT™&text2=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1143,7 +1143,7 @@ if (text.includes('.lion')){
 var gh = text.split(".lion ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1={text1}&text2={text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=BOT™&text2=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1171,7 +1171,7 @@ if (text.includes('.joker')){
 }
 if (text.includes(".joox")){
 const teks = text.replace(/.joox /, "")
-axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/joox?q=`).then((res) => {
     let hasil = `\n*judul* : ${res.data.judul} \n*mp3* :${res.data.mp3}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
