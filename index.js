@@ -1171,7 +1171,7 @@ if (text.includes('.joker')){
 }
 if (text.includes(".joox")){
 const teks = text.replace(/.joox /, "")
-axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${teks}`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}`).then((res) => {
     let hasil = `\n*judul* : ${res.data.judul} \n*mp3* :${res.data.mp3}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
