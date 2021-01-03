@@ -1172,7 +1172,13 @@ if (text.includes('.joker')){
 if (text.includes(".joox")){
 const teks = text.replace(/.joox /, "")
 axios.get(`https://tobz-api.herokuapp.com/api/joox?q=`).then((res) => {
-    let hasil = `\n*judul* : ${res.data.judul} \n*mp3* :${res.data.mp3}`;
+    let hasil = `\n*judul* : ${data.result.judul} \n*album* : ${data.result.album} \n*dipublikasi* : ${data.result.dipublikasi}`
+   buffer = await
+getBuffer(data.result.thumb)
+     lagu = await
+getBuffer(data.result.mp3)
+        client.sendMessage(from,buffer,image,{quoted:mek,caption:
+infomp3})
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 
