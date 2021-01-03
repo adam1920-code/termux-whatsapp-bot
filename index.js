@@ -1179,7 +1179,11 @@ getBuffer(data.result.thumb)
 getBuffer(data.result.mp3)
         client.sendMessage(from,buffer,image,{quoted:mek,caption:
 infomp3})
-    conn.sendMessage(id, hasil ,MessageType.text);
+     client.sendMessage(from,
+lagu,audio,{mimetype:'audio/mp4',
+filename:`${data.result.title}.mp3`,
+quoted: mek})
+    conn.sendMessage(id, hasil ,MessageType.mp3, { quoted: m });
 })
 
 }
