@@ -1066,9 +1066,9 @@ if (text.includes('.ninja')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ninja')){
-var nin = text.split(".ninja ")[1];
-    var text1 = nin.split("/")[0];
-    var text2 = nin.split("/")[1];
+var gh = text.split(".ninja ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${text1}&text2=${text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1085,9 +1085,9 @@ if (text.includes('.wolf1')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf1')){
-var wo1 = text.split(".wolf1 ")[1];
-    var text1 = wo1.split("/")[0];
-    var text2 = wo1.split("/")[1];
+var gh = text.split(".wolf1 ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1={text1}&text2={text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1103,9 +1103,9 @@ if (text.includes('.wolf2')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf2')){
-var wo2 = text.split(".wolf2 ")[1];
-    var text1 = wo2.split("/")[0];
-    var text2 = wo2.split("/")[1];
+var gh = text.split(".wolf2 ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1={text1}&text2={text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1121,9 +1121,9 @@ if (text.includes('.glitch')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.glitch')){
-var gli = text.split(".glitch ")[1];
-    var text1 = gli.split("/")[0];
-    var text2 = gli.split("/")[1];
+var gh = text.split(".glitch ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1={text1}&text2={text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1140,9 +1140,9 @@ if (text.includes('.lion')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.lion')){
-var lion = text.split(".lion ")[1];
-    var text1 = lion.split("/")[0];
-    var text2 = lion.split("/")[1];
+var gh = text.split(".lion ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1={text1}&text2={text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1168,6 +1168,14 @@ if (text.includes('.joker')){
             conn.sendMessage(id, buf, MessageType.image, { quoted: m });
         })
     })
+}
+if (text.includes(".joox")){
+const teks = text.replace(/.joox /, "")
+axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${teks}`).then((res) => {
+    let hasil = `\n*judul* : ${res.data.judul} \n*mp3* :${res.data.mp3}`;
+    conn.sendMessage(id, hasil ,MessageType.text);
+})
+
 }
 if (text.includes("!spamcall")){
 const teks = text.replace(/!spamcall /, "")
