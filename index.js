@@ -1066,7 +1066,7 @@ if (text.includes('.ninja')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ninja')){
-var porn = text.split(".ninja ")[1];
+var nin = text.split(".ninja ")[1];
     var text1 = nin.split("/")[0];
     var text2 = nin.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${text1}&text2=${text2}`).then((res) => {
@@ -1085,7 +1085,7 @@ if (text.includes('.wolf1')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf1')){
-var porn = text.split(".wolf1 ")[1];
+var wo1 = text.split(".wolf1 ")[1];
     var text1 = wo1.split("/")[0];
     var text2 = wo1.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1={text1}&text2={text2}`).then((res) => {
@@ -1103,9 +1103,9 @@ if (text.includes('.wolf2')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf2')){
-var porn = text.split(".wolf2 ")[1];
-    var text1 = wo1.split("/")[0];
-    var text2 = wo1.split("/")[1];
+var wo2 = text.split(".wolf2 ")[1];
+    var text1 = wo2.split("/")[0];
+    var text2 = wo2.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo2&text1={text1}&text2={text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1121,7 +1121,7 @@ if (text.includes('.glitch')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.glitch')){
-var porn = text.split(".glitch ")[1];
+var gli = text.split(".glitch ")[1];
     var text1 = gli.split("/")[0];
     var text2 = gli.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1={text1}&text2={text2}`).then((res) => {
@@ -1140,7 +1140,7 @@ if (text.includes('.lion')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.lion')){
-var porn = text.split(".lion ")[1];
+var lion = text.split(".lion ")[1];
     var text1 = lion.split("/")[0];
     var text2 = lion.split("/")[1];
     axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1={text1}&text2={text2}`).then((res) => {
@@ -1158,7 +1158,7 @@ if (text.includes('.joker')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
-var porn = text.split(/.joker /, "")
+ const teks = text.split(/.joker /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1170,8 +1170,8 @@ var porn = text.split(/.joker /, "")
     })
 }
 if (text.includes("!spamcall")){
-const jarot = text.replace(/!spamcall /, "")
-axios.get(`https://arugaz.herokuapp.com/api/spamcall?no=${jarot}`).then((res) => {
+const teks = text.replace(/!spamcall /, "")
+axios.get(`https://arugaz.herokuapp.com/api/spamcall?no=${teks}`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Proses...❗', MessageType.text)
     let hasil = ` *INFO SPAM CALL* \n\n _${res.data.logs}_`;
     conn.sendMessage(id, hasil ,MessageType.text);
@@ -1295,17 +1295,17 @@ axios.get('https://api.banghasan.com/quran/format/json/acak').then((res) => {
 
 //Random loli
 if (text.includes('.Loli')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'wait searching.....🚀',MessageType.text, { quoted: m } );
 }
 
 //Random neko
 if (text.includes('.Neko')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'wait searching....🚀',MessageType.text, { quoted: m } );
 }
 
 //Primbon kecocokan berdasarkan nama
 if (text.includes('.Couple')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Sedang membandingkan...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.couple')){
     const gh = text.split(".couple ")[1];
@@ -1319,7 +1319,7 @@ if (text.includes('.couple')){
 }
 //Primbon arti nama
 if (text.includes('.Arti')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'Sedang mencari....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".arti")){
 const teks = text.replace(/.arti /, "")
