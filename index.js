@@ -2,7 +2,6 @@ const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
 const imageToBase64 = require('image-to-base64');
-const mp3 = require('mp3');
 const get = require('got')
 const fs = require("fs");
 const dl = require("./lib/downloadImage.js");
