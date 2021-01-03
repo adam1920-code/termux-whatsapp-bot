@@ -1177,8 +1177,8 @@ axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}`).then((re
 })
 
 }
-if (text.includes("!spamcall")){
-const teks = text.replace(/!spamcall /, "")
+if (text.includes(".spamcall")){
+const teks = text.replace(/.spamcall /, "")
 axios.get(`https://arugaz.herokuapp.com/api/spamcall?no=${teks}`).then((res) => {
 	conn.sendMessage(id, '[WAIT] Proses...❗', MessageType.text)
     let hasil = ` *INFO SPAM CALL* \n\n _${res.data.logs}_`;
@@ -1204,7 +1204,7 @@ const teks = text.replace(/.logoesport /, "")
 
   //Quotes maker
 if (text.includes('.Kata')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'membuat kata....🚀',MessageType.text, { quoted: m } );
 }
 if (text.includes('.kata')){
     const gh = text.split(".kata ")[1];
@@ -1518,7 +1518,7 @@ if (messageType === MessageType.text)
 
 //tod
 if (text.includes('.Tod')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, {quoted: m});
+conn.sendMessage(id, 'mempersiapkan....',MessageType.text, {quoted: m});
 }
 if (text.includes('.tod')){
 conn.sendMessage(id, `Sebelum bermain berjanjilah akan melaksanakan apapun perintah yang di berikan. 
