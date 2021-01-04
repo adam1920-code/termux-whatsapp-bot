@@ -1159,7 +1159,7 @@ if (text.includes('.joker')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
- var gh = text.replace(".joker ")[1];
+ const teks = text.replace(".joker /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1174,7 +1174,7 @@ if (text.includes('.water')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.water')){
- var gh = text.replace(".water ")[1];
+ const teks = text.replace(".water /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=dropwater&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1189,7 +1189,7 @@ if (text.includes('.blood')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.blood')){
- var gh = text.replace(".blood ")[1];
+ const teks = text.replace(".blood /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=blood&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1204,7 +1204,7 @@ if (text.includes('.neon')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.neon')){
- var gh = text.replace(".neon ")[1];
+ const teks = text.replace(".neon /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
