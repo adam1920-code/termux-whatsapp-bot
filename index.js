@@ -1154,12 +1154,77 @@ var gh = text.split(".lion ")[1];
        
       })
 }
+if (text.includes('.retro')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.retro')){
+var gh = text.split(".lion ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
+    var text3 = gh.split("/")[2];
+    axios.get(`https://docs-jojo.herokuapp.com/api/neon?text1=${text1}&text2=${text2}&text3=${text3}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+
+}
 if (text.includes('.joker')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
- const teks = text.split(/.joker /, "")
-   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${teks}`).then((res) => {
+ var gh = text.split(".joker ")[1];
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${text}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.blackpink')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.blackpink')){
+ var gh = text.split(".blackpink ")[1];
+   axios.get(`https://docs-jojo.herokuapp.com/api/blackpink?text=${text}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.text3d')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.text3d')){
+ var gh = text.split(".text3d ")[1];
+   axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${text}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.thunder')){
+conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+}
+if (text.includes('.thunder')){
+ var gh = text.split(".thunder ")[1];
+   axios.get(`https://docs-jojo.herokuapp.com/api/thunder?text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
