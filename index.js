@@ -1158,7 +1158,7 @@ if (text.includes('.retro')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.retro')){
-var gh = text.split(".lion ")[1];
+var gh = text.split(".retro ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
     var text3 = gh.split("/")[2];
@@ -1249,22 +1249,7 @@ axios.get(`https://arugaz.herokuapp.com/api/spamcall?no=${teks}`).then((res) => 
     let hasil = ` *INFO SPAM CALL* \n\n _${res.data.logs}_`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
-}
-if (text.includes('.Logoesport')){
-conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
-}
-if (text.includes('.logoesport')){
-const teks = text.replace(/.logoesport /, "")
-    axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=`)
-    .then((res) => {
-      imageToBase64(res.data.result)
-        .then(
-          (ress) => {
-            conn.sendMessage(id, '[ WAIT ] Membuat teks⏳ silahkan tunggu', MessageType.text, { quoted: m } )
-            var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, buf, MessageType.image, { quoted: m } )
-        })
-    })
+
 }
 
   //Quotes maker
