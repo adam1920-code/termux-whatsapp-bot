@@ -1143,7 +1143,7 @@ if (text.includes('.lion')){
 var gh = text.split(".lion ")[1];
     var text1 = gh.split("/")[0];
     var text2 = gh.split("/")[1];
-    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${text1)&text2=${text2}`).then((res) => {
+    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${text1}&text2=${text2}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
