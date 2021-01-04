@@ -778,7 +778,7 @@ if (text.includes(".loli"))
             (response) => {
     conn.sendMessage(id, '[ WAIT ] Searching ⏳ silahkan tunggu', MessageType.text, { quoted: m } )
 	var buf = Buffer.from(response, 'base64'); 
-    conn.sendMessage(id, buf ,MessageType.image, { caption: `👉👈`, quoted: m } )
+    conn.sendMessage(id, buf ,MessageType.image, { caption: `nih lolinya om...👉👈`, quoted: m } )
             }
         )
         .catch(
@@ -948,7 +948,7 @@ if (text.includes('.Infotv')){
 conn.sendMessage(id, 'mohon tunggu sebentar....',MessageType.text, { quoted: m } );
 }
 if (text.includes(".infotv")){
-	axios.get(`https://docs-jojo.herokuapp.com/api/jadwaltvnow`).then ((res) => {
+	axios.get(`https://docs-jojo.herokuapp.com/api/jadwaltv?ch=${text}`).then ((res) => {
 	conn.sendMessage(id, '[ WAIT ] Menampilkan jadwal tv⏳ silahkan tunggu', MessageType.text, { quoted: m } )
 	let hasil =`*Jadwal* : \n${res.data.result}`
 	conn.sendMessage(id, hasil, MessageType.text, { quoted: m } )
@@ -1153,32 +1153,13 @@ var gh = text.split(".lion ")[1];
         })
        
       })
-}
-if (text.includes('.retro')){
-conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
-}
-if (text.includes('.retro')){
-var gh = text.split(".retro ")[1];
-    var text1 = gh.split("/")[0];
-    var text2 = gh.split("/")[1];
-    var text3 = gh.split("/")[2];
-    axios.get(`https://docs-jojo.herokuapp.com/api/neon?text1=${text1}&text2=${text2}&text3=${text3}`).then((res) => {
-      imageToBase64(res.data.result)
-        .then(
-          (ress) => {
-            var buf = Buffer.from(ress, 'base64')
-            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
-            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
-        })
-       
-      })
 
 }
 if (text.includes('.joker')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
- var gh = text.split(".joker ")[1];
+ var gh = text.replace(".joker ")[1];
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1189,12 +1170,12 @@ if (text.includes('.joker')){
         })
     })
 }
-if (text.includes('.blackpink')){
+if (text.includes('.water')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
-if (text.includes('.blackpink')){
- var gh = text.split(".blackpink ")[1];
-   axios.get(`https://docs-jojo.herokuapp.com/api/blackpink?text=${text}`).then((res) => {
+if (text.includes('.water')){
+ var gh = text.replace(".water ")[1];
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=dropwater&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1204,12 +1185,12 @@ if (text.includes('.blackpink')){
         })
     })
 }
-if (text.includes('.text3d')){
+if (text.includes('.blood')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
-if (text.includes('.text3d')){
- var gh = text.split(".text3d ")[1];
-   axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${text}`).then((res) => {
+if (text.includes('.blood')){
+ var gh = text.replace(".blood ")[1];
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=blood&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1219,12 +1200,12 @@ if (text.includes('.text3d')){
         })
     })
 }
-if (text.includes('.thunder')){
+if (text.includes('.neon')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
-if (text.includes('.thunder')){
- var gh = text.split(".thunder ")[1];
-   axios.get(`https://docs-jojo.herokuapp.com/api/thunder?text=${text}`).then((res) => {
+if (text.includes('.neon')){
+ var gh = text.replace(".neon ")[1];
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=${text}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1233,6 +1214,7 @@ if (text.includes('.thunder')){
             conn.sendMessage(id, buf, MessageType.image, { quoted: m });
         })
     })
+
 }
 if (text.includes(".joox")){
 const teks = text.replace(/.joox /, "")
@@ -1303,7 +1285,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes(".kbbi")){
 const teks = text.replace(/.kbbi /, "")
-axios.get(`https://mhankbarbars.herokuapp.com/api/kbbi?query=${teks}&apiKey=${apibarbar}`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/kbbi?kata=${text}`).then((res) => {
     let hasil = `*Hasil* :\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
@@ -1386,6 +1368,17 @@ axios.get(`https://arugaz.herokuapp.com/api/artinama?nama=${teks}`).then((res) =
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
+if (text.includes('.renungan')){
+conn.sendMessage(id, 'Sedang mencari....',MessageType.text, { quoted: m } );
+}
+if (text.includes(".renungan")){
+const teks = text.replace(/.renungan /, "")
+axios.get(`https://docs-jojo.herokuapp.com/api/renungan`).then((res) => {
+    let hasil = `*Arti dari namanu adalah*\n\n    *${teks}* ${res.data.result}`;
+    conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
+})
+
+}
 //simsimi
 if (text.includes('.Bot')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.text, { quoted: m } );
@@ -1447,14 +1440,14 @@ if (text.includes('.chatprank')){
 }
 
 
-  //Al-Qur'an
-if (text.includes('.Alquran')){
+  //Alquran
+if (text.includes('.alquran')){
 conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil\n_contoh : .alquran 1_',MessageType.text, {quoted: m});
 }
 if (text.includes(".alquran")){
 const teks = text.replace(/.alquran /, "")
-axios.get(`https://api.vhtear.com/quran?no=${teks}&apikey=${apivhtear}`).then((res) => {
-    let hasil = `*Surah* : ${res.data.result.surah}\n${res.data.result.quran}`;
+axios.get(`https://docs-jojo.herokuapp.com/api/renungan`).then((res) => {
+    let hasil = `*surah* : ${res.data.result.surah}\n${res.data.result.quran}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
 }
