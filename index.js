@@ -1159,8 +1159,8 @@ if (text.includes('.joker')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
- const teks = text.replace(".joker ")
-   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${text}`).then((res) => {
+ const teks = text.replace(/.joker /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${teks}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1174,8 +1174,8 @@ if (text.includes('.water')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.water')){
- const teks = text.replace(".water ")
-   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=dropwater&text=${text}`).then((res) => {
+ const teks = text.replace(/.water /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=dropwater&text=${teks}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1189,8 +1189,8 @@ if (text.includes('.blood')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.blood')){
- const teks = text.replace(".blood ")
-   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=blood&text=${text}`).then((res) => {
+ const teks = text.replace(/.blood /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=blood&text=${teks}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1204,8 +1204,8 @@ if (text.includes('.neon')){
 conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
 }
 if (text.includes('.neon')){
- const teks = text.replace(".neon ")
-   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=${text}`).then((res) => {
+ const teks = text.replace(/.neon /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=${teks}`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -1285,7 +1285,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 }
 if (text.includes(".kbbi")){
 const teks = text.replace(/.kbbi /, "")
-axios.get(`https://tobz-api.herokuapp.com/api/kbbi?kata=${text}`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/kbbi?kata=${teks}`).then((res) => {
     let hasil = `*Hasil* :\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text, { quoted: m } );
 })
@@ -1386,7 +1386,7 @@ conn.sendMessage(id, 'Silakan ulangi command dengan huruf kecil',MessageType.tex
 if (text.includes(".bot")){
 const teks = text.replace(/.bot /, "")
 axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
-    let hasil = `${res.data.result}\n\n*Simsimi chat*`;
+    let hasil = `${res.data.result}\n`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
