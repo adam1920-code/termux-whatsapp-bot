@@ -1134,7 +1134,6 @@ var gh = text.split(".glitch ")[1];
         })
        
       })
-
 }
 if (text.includes('.lion')){
 conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
@@ -1153,7 +1152,42 @@ var gh = text.split(".lion ")[1];
         })
        
       })
-
+}
+if (text.includes('.snow')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.snow')){
+var gh = text.split(".snow ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
+    axios.get(`https://zeksapi.herokuapp.com/api/snowwrite?text1=${text1}&text2=${text2}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
+}
+if (text.includes('.marvel')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.marvel')){
+var gh = text.split(".marvel ")[1];
+    var text1 = gh.split("/")[0];
+    var text2 = gh.split("/")[1];
+    axios.get(`https://zeksapi.herokuapp.com/api/marvellogo?text1=${text1}&text2=${text2}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       
+      })
 }
 if (text.includes('.joker')){
 conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
@@ -1170,12 +1204,133 @@ if (text.includes('.joker')){
         })
     })
 }
+if (text.includes('.grafiti')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.grafiti')){
+ const teks = text.replace(/.grafiti /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/grafiti?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.pantai')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.pantai')){
+ const teks = text.replace(/.pantai /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/tpantai?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+       })
+}
+if (text.includes('.leavest')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.leavest')){
+ const teks = text.replace(/.leavest /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/leavest?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.fire')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.fire')){
+ const teks = text.replace(/.fire /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/tfire?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.epep')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.epep')){
+ const teks = text.replace(/.epep /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/epep?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.blackpink')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.blackpink')){
+ const teks = text.replace(/.blackpink /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/logobp?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.color')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.color')){
+ const teks = text.replace(/.color /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/colortext?text=${teks}&apikey=apivinz`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+
+}
 if (text.includes('.water')){
 conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.water')){
  const teks = text.replace(/.water /, "")
    axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=dropwater&text=${teks}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
+if (text.includes('.thunder')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.thunder')){
+ const teks = text.replace(/.thunder /, "")
+   axios.get(`https://zeksapi.herokuapp.com/api/thundertext?text=${teks}&apikey=apivinz`).then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
