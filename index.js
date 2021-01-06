@@ -1045,7 +1045,7 @@ axios.get(`https://tobz-api.herokuapp.com/api/shorturl?url=${teks}`).then((res) 
 
   //Text to pict
 if (text.includes('.logopornhub')){
-conn.sendMessage(id, 'mohon tunggu sebentar...',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.logopornhub')){
 var porn = text.split(".logopornhub ")[1];
@@ -1063,8 +1063,7 @@ var porn = text.split(".logopornhub ")[1];
       })
 }
 if (text.includes('.ninja')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.ninja')){
 var gh = text.split(".ninja ")[1];
@@ -1083,8 +1082,7 @@ var gh = text.split(".ninja ")[1];
 
 }
 if (text.includes('.wolf1')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf1')){
 var gh = text.split(".wolf1 ")[1];
@@ -1102,8 +1100,7 @@ var gh = text.split(".wolf1 ")[1];
       })
 }
 if (text.includes('.wolf2')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.wolf2')){
 var gh = text.split(".wolf2 ")[1];
@@ -1121,8 +1118,7 @@ var gh = text.split(".wolf2 ")[1];
       })
 }
 if (text.includes('.glitch')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.glitch')){
 var gh = text.split(".glitch ")[1];
@@ -1141,8 +1137,7 @@ var gh = text.split(".glitch ")[1];
 
 }
 if (text.includes('.lion')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.lion')){
 var gh = text.split(".lion ")[1];
@@ -1161,8 +1156,7 @@ var gh = text.split(".lion ")[1];
 
 }
 if (text.includes('.joker')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.joker')){
  const teks = text.replace(/.joker /, "")
@@ -1177,8 +1171,7 @@ if (text.includes('.joker')){
     })
 }
 if (text.includes('.water')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.water')){
  const teks = text.replace(/.water /, "")
@@ -1193,8 +1186,7 @@ if (text.includes('.water')){
     })
 }
 if (text.includes('.blood')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.blood')){
  const teks = text.replace(/.blood /, "")
@@ -1209,8 +1201,7 @@ if (text.includes('.blood')){
     })
 }
 if (text.includes('.neon')){
-conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file
-Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
 if (text.includes('.neon')){
  const teks = text.replace(/.neon /, "")
