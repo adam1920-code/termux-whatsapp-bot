@@ -1763,6 +1763,21 @@ if (text.includes('.grafiti')){
         })
     })
 }
+if (text.includes('.neon')){
+conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
+}
+if (text.includes('.neon')){
+ const teks = text.replace(/.neon /, "")
+   axios.get(`https://tobz-api.herokuapp.com/api/textpro?theme=neon_light&text=Tobz&apikey=${BotWeA}`).then((res) => {
+      imageToBase64(res.data.result)
+        .then(
+          (ress) => {
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, '[ WAIT ] Sedang diproses⏳ silahkan tunggu sebentar', MessageType.text, { quoted: m })
+            conn.sendMessage(id, buf, MessageType.image, { quoted: m });
+        })
+    })
+}
 if (text.includes('.pantai')){
 conn.sendMessage(id, 'https://www.mediafire.com/file/dd69o14po7hv94a/Text+Pro.apk/file Download aplikasi text pro, aplikasi maker text terbaik dengan cepat serta banyak thema',MessageType.text, { quoted: m } );
 }
