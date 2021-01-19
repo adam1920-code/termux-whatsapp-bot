@@ -1856,7 +1856,7 @@ if (text.includes('.color')){
 }
 if (text.includes(".joox")){
 const teks = text.replace(/.joox /, "")
-axios.get(`https://tobz-api.herokuapp.com/api/joox?q=`).then((res) => {
+axios.get(`https://tobz-api.herokuapp.com/api/joox?q=${teks}&apikey=BotWeA`).then((res) => {
     let hasil = `\n*judul* : ${data.result.judul} \n*album* : ${data.result.album} \n*dipublikasi* : ${data.result.dipublikasi}`
    conn.sendMessage(id, hasil ,MessageType.mp3, { quoted: m });
 })
